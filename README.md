@@ -1,4 +1,4 @@
-# Invisibility-AI-Styler
+# Crowdly-styler
 РАСШИРЕНИЯ:
 1) https://chromewebstore.google.com/detail/crowdly-%E2%80%93-ai-study-assist/idipjdgkafkkbklacjonnhkammdpigol
 
