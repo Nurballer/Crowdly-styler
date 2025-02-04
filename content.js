@@ -3,12 +3,12 @@ function modifyPage() {
     // 1. Remove specific elements
     document.querySelectorAll('.success_status_axy06_46, .success_status_axy06_41, .question-status, ._logo_button_119mu_152').forEach(el => el.remove());
 
-    // 2. Modify the text content of all elements containing 'AI Answer'
+    // 2. Modify the text content of all elements containing '•'
     document.querySelectorAll('*').forEach(el => {
         if (el.childNodes.length) {
             el.childNodes.forEach(node => {
-                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('AI Answer')) {
-                    node.textContent = node.textContent.replace(/AI Answer/g, '•'); // Replace 'AI Answer' with '.'
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('•')) {
+                    node.textContent = node.textContent.replace(/•/g, '•'); // Replace '•' with '.'
                 }
             });
         }
@@ -28,15 +28,15 @@ function modifyPage() {
         answer.style.color = '#ffffff';
     });
 
-    // 5. Remove emoji '✨' and '✅' throughout the page
+    // 5. Remove emoji '' and '' throughout the page
     document.querySelectorAll('*').forEach(el => {
         if (el.childNodes.length) {
             el.childNodes.forEach(node => {
-                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('✨')) {
-                    node.textContent = node.textContent.replace(/✨/g, '');
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('')) {
+                    node.textContent = node.textContent.replace(//g, '');
                 }
-                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('✅')) {
-                    node.textContent = node.textContent.replace(/✅/g, '');
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('')) {
+                    node.textContent = node.textContent.replace(//g, '');
                 }
             });
         }
@@ -62,15 +62,15 @@ function modifyPage() {
                 answer.style.color = '#ffffff';
             });
 
-            // Remove emoji '✨' and '✅' in Shadow DOM
+            // Remove emoji '' and '' in Shadow DOM
             el.shadowRoot.querySelectorAll('*').forEach(shadowEl => {
                 if (shadowEl.childNodes.length) {
                     shadowEl.childNodes.forEach(node => {
-                        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('✨')) {
-                            node.textContent = node.textContent.replace(/✨/g, '');
+                        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('')) {
+                            node.textContent = node.textContent.replace(//g, '');
                         }
-                        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('✅')) {
-                            node.textContent = node.textContent.replace(/✅/g, '');
+                        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('')) {
+                            node.textContent = node.textContent.replace(//g, '');
                         }
                     });
                 }
